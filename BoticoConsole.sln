@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoticoConsole", "BoticoConsole\BoticoConsole.csproj", "{8D317E6A-AD4E-4019-8094-582B16D41046}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Botico", "..\Botico\Botico\Botico.csproj", "{02C3663A-1442-46B3-9EB4-76DFF16C267B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PearXLib", "..\PearXLib\PearXLib\PearXLib.csproj", "{4176C1E5-6FF0-44C1-B659-C248B6A743CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D317E6A-AD4E-4019-8094-582B16D41046}.Debug|x86.ActiveCfg = Debug|x86
+		{8D317E6A-AD4E-4019-8094-582B16D41046}.Debug|x86.Build.0 = Debug|x86
+		{8D317E6A-AD4E-4019-8094-582B16D41046}.Release|x86.ActiveCfg = Release|x86
+		{8D317E6A-AD4E-4019-8094-582B16D41046}.Release|x86.Build.0 = Release|x86
+		{02C3663A-1442-46B3-9EB4-76DFF16C267B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{02C3663A-1442-46B3-9EB4-76DFF16C267B}.Debug|x86.Build.0 = Debug|Any CPU
+		{02C3663A-1442-46B3-9EB4-76DFF16C267B}.Release|x86.ActiveCfg = Debug|Any CPU
+		{02C3663A-1442-46B3-9EB4-76DFF16C267B}.Release|x86.Build.0 = Debug|Any CPU
+		{4176C1E5-6FF0-44C1-B659-C248B6A743CF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4176C1E5-6FF0-44C1-B659-C248B6A743CF}.Debug|x86.Build.0 = Debug|Any CPU
+		{4176C1E5-6FF0-44C1-B659-C248B6A743CF}.Release|x86.ActiveCfg = Debug|Any CPU
+		{4176C1E5-6FF0-44C1-B659-C248B6A743CF}.Release|x86.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal

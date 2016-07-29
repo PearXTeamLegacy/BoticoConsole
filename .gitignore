@@ -1,0 +1,5 @@
+BoticoConsole/obj/*
+BoticoConsole/bin/*
+.vs/*
+.directory
+*.userprefs
