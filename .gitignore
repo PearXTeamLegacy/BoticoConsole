@@ -1,5 +1,6 @@
 BoticoConsole/obj/*
 BoticoConsole/bin/*
+packages/*
 .vs/*
 .directory
 *.userprefs

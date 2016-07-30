@@ -9,19 +9,28 @@ namespace BoticoConsole
 
 		public static void Main(string[] args)
 		{
+			Console.WriteLine("Welcome to the Botico!");
 			Botico.Init();
 			ReadLine();
 		}
 
 		public static void ReadLine()
 		{
+			Console.Write(">");
 			string s = Console.ReadLine();
-			string response = Botico.UseCommand(s, Environment.UserName, false);
-			if (!string.IsNullOrEmpty(response))
-				Console.WriteLine(response);
+			if (s == "/quit")
+			{
+				Botico.End();
+			}
 			else
-				Console.WriteLine("Unknown command!");
-			ReadLine();
+			{
+				string response = Botico.UseCommand(s, Environment.UserName, false);
+				if (!string.IsNullOrEmpty(response))
+					Console.WriteLine(response);
+				else
+					Console.WriteLine("Unknown command!");
+				ReadLine();
+			}
 		}
 	}
 }
