@@ -1,5 +1,7 @@
 ﻿using System;
 using Botico;
+using Botico.Model;
+using PearXLib;
 
 namespace BoticoConsole
 {
@@ -24,9 +26,18 @@ namespace BoticoConsole
 			}
 			else
 			{
-				string response = Botico.UseCommand(s, Environment.UserName, false);
-				if (!string.IsNullOrEmpty(response))
-					Console.WriteLine(response);
+				BoticoResponse response = Botico.UseCommand(s, Environment.UserName, false);
+
+				bool text = !string.IsNullOrEmpty(response.Text);
+				bool img = response.Image != null;
+
+				if (text ||img)
+				{
+					if(text)
+						Console.WriteLine(response.Text);
+					if (img)
+						Console.WriteLine("Image [" + response.Image.Width + "x" + response.Image.Height + "]");
+				}
 				else
 					Console.WriteLine("Unknown command!");
 				ReadLine();

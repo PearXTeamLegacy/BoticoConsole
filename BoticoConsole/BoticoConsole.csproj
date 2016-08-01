@@ -29,6 +29,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -38,6 +39,10 @@
     <ProjectReference Include="..\..\Botico\Botico\Botico.csproj">
       <Project>{02C3663A-1442-46B3-9EB4-76DFF16C267B}</Project>
       <Name>Botico</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PearXLib\PearXLib\PearXLib.csproj">
+      <Project>{4176C1E5-6FF0-44C1-B659-C248B6A743CF}</Project>
+      <Name>PearXLib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
