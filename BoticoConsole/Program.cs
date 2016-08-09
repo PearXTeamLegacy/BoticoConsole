@@ -1,13 +1,12 @@
 ﻿using System;
 using Botico;
 using Botico.Model;
-using PearXLib;
 
 namespace BoticoConsole
 {
 	class MainClass
 	{
-		public static BoticoClient Botico = new BoticoClient('/', "Console", false);
+		public static BoticoClient Botico = new BoticoClient('/', "Console", false, true, false, true);
 
 		public static void Main(string[] args)
 		{
