@@ -8,7 +8,7 @@ namespace BoticoConsole
 	{
 		public static BoticoClient Botico = new BoticoClient('/', "Console", false, true, false, true);
 
-		public static void Main(string[] args)
+		public static void Main()
 		{
 			Console.WriteLine("Welcome to the Botico!");
 			Botico.Init();
