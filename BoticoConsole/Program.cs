@@ -6,7 +6,7 @@ namespace BoticoConsole
 {
 	class MainClass
 	{
-		public static BoticoClient Botico = new BoticoClient('/', "Console", false, true, false, true);
+		public static BoticoClient Botico = new BoticoClient("Console");
 
 		public static void Main()
 		{
@@ -19,27 +19,30 @@ namespace BoticoConsole
 		{
 			Console.Write(">");
 			string s = Console.ReadLine();
-			if (s == "/quit")
-			{
-				Botico.End();
-			}
-			else
+			if(s != "/quit")
 			{
 				BoticoResponse response = Botico.UseCommand(s, Environment.UserName, false);
-
-				bool text = !string.IsNullOrEmpty(response.Text);
-				bool img = response.Image != null;
-
-				if (text ||img)
-				{
-					if(text)
-						Console.WriteLine(response.Text);
-					if (img)
-						Console.WriteLine("Image [" + response.Image.Width + "x" + response.Image.Height + "]");
-				}
-				else
-					Console.WriteLine("Unknown command!");
+				HandleResponse(response, false);
 				ReadLine();
+			}
+		}
+
+		public static void HandleResponse(BoticoResponse response, bool group)
+		{
+			bool text = !string.IsNullOrEmpty(response.Text);
+			bool img = response.Images != null;
+
+			if (text || img)
+			{
+				if (group)
+					Console.Write("[Group] ");
+				if (text)
+					Console.WriteLine(response.Text);
+				if (img)
+				{
+					foreach (var v in response.Images)
+						Console.WriteLine("[Image  " + v.Width + "x" + v.Height + "]");
+				}
 			}
 		}
 	}

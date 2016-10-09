@@ -5,8 +5,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoticoConsole", "BoticoCons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Botico", "..\Botico\Botico\Botico.csproj", "{02C3663A-1442-46B3-9EB4-76DFF16C267B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PearXLib", "..\PearXLib\PearXLib\PearXLib.csproj", "{4176C1E5-6FF0-44C1-B659-C248B6A743CF}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -21,9 +19,5 @@ Global
 		{02C3663A-1442-46B3-9EB4-76DFF16C267B}.Debug|x86.Build.0 = Debug|Any CPU
 		{02C3663A-1442-46B3-9EB4-76DFF16C267B}.Release|x86.ActiveCfg = Debug|Any CPU
 		{02C3663A-1442-46B3-9EB4-76DFF16C267B}.Release|x86.Build.0 = Debug|Any CPU
-		{4176C1E5-6FF0-44C1-B659-C248B6A743CF}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{4176C1E5-6FF0-44C1-B659-C248B6A743CF}.Debug|x86.Build.0 = Debug|Any CPU
-		{4176C1E5-6FF0-44C1-B659-C248B6A743CF}.Release|x86.ActiveCfg = Debug|Any CPU
-		{4176C1E5-6FF0-44C1-B659-C248B6A743CF}.Release|x86.Build.0 = Debug|Any CPU
 	EndGlobalSection
 EndGlobal
